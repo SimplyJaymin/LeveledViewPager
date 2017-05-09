@@ -15,7 +15,7 @@ allprojects {
 }
 
 dependencies {
-	compile 'com.github.SimplyJaymin:LeveledViewPager:0.1'
+	compile 'com.github.SimplyJaymin:LeveledViewPager:0.1.1'
 }
 ```
 ### Usage
