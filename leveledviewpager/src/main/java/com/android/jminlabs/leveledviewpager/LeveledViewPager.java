@@ -9,7 +9,9 @@ import android.view.View;
 import android.view.ViewGroup;
 
 /**
- * Created by jayminraval on 2017-05-08.
+ *
+ * This custom viewPager ensures that a selected view has the same height across all of its pages
+ * NOTE - At the moment, the adapter has to be of type FragmentPagerAdapter
  */
 public class LeveledViewPager extends ViewPager {
 
@@ -24,6 +26,11 @@ public class LeveledViewPager extends ViewPager {
         super(context, attrs);
     }
 
+    /***
+     * Set the resorce id of the view that has to be leveled across all the viewPager pages
+     *
+     * @param id resource id of view
+     */
     public void setViewIdToLevel(int id) {
         mSameHeightViewId = id;
     }
